@@ -1,0 +1,117 @@
+/* This is the container of the entire button */
+.dropdownContainer1 { 
+  display: inline-block;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+/* This is the styling of the button itself */
+.dropButton1 { 
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  
+}
+
+/* This is for styling the button on mouse hover */
+.dropdownContainer1:hover .dropButton1 { 
+  background-color:lightgreen;
+}
+
+/* Styling for the contents inside the links */
+.dropdownContent1 {
+  /* border: 1px solid red; */
+  display: none;
+  background-color: #e7e7e7;
+  min-width: 160px;
+  box-shadow: #000000;
+}
+
+/* Styling to remove the link styles + link spacing */
+.dropdownContent1 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 12px 16px;
+}
+
+/* Styling to darken the links on hover individually */
+.dropdownContent1 a:hover {
+  background-color: #8f8d8d;
+}
+
+/* Styling to show the content when hovering inside container */
+.dropdownContainer1:hover .dropdownContent1 {
+  display: block;
+}
+
+/* ************************************************************ */
+/* Styling for Horizontal navbar with dropdown */
+
+.horizontalNav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.horizontalNav li {
+  display: inline-block;
+}
+
+.horizontalNav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.horizontalNav li a:hover {
+  background-color: red;
+}
+
+.horizontalNav li.dropdownContainer2 {
+  display: inline-block;
+}
+
+.dropdownContainer2 .dropdownContent2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* 0 1 1 vs 0 1 2 (above) */
+/* 0 3 1 vs 0 1 1 (previous) vs 0 1 2 (above) */
+/* 0 3 1 vs 1 0 1 (below with id #innerNav) */
+.horizontalNav .dropdownContainer2 .dropdownContent2 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 12px 16px;
+}
+
+.dropdownContainer2 .dropdownContent2 a:hover {
+  background-color: #e7e6e6;
+}
+
+.dropdownContainer2:hover .dropdownContent2 {
+  display: block;
+}
+
+/* #innerNav a{
+  text-decoration: none;
+  color: yellow;
+  display: block;
+  padding: 12px 16px;
+} */
+
+
+
+

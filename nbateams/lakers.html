@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Los Angeles Lakers</title>
+  </head>
+  <body>
+    <img 
+      src="../public/img/lakerslogo.png" 
+      alt="Los Angeles Lakers"
+      width="384"
+      height="240"
+    />
+    <h1>Los Angeles Lakers</h1>
+    <h2>Head Coach: Darvin Ham</h2>
+    <h4>Starting Five</h4>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="2">Jersey # and Name</th>
+          <th>Position</th>
+          <th>Rating</th>
+          <th colspan="2">Minutes - Points</th>
+          <th colspan="3">AST - STL - BLK</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#6</td>
+          <td>Lebron James</td>
+          <td>PF</td>
+          <td>97</td>
+          <td>36.2</td>
+          <td>30</td>
+          <td>7</td>
+          <td>1</td>
+          <td>0.6</td>
+        </tr>
+        <tr>
+          <td>#1</td>
+          <td>D'Angelo Russell</td>
+          <td>PG</td>
+          <td>81</td>
+          <td>32.7</td>
+          <td>17.9</td>
+          <td>6.2</td>
+          <td>1.1</td>
+          <td>0.4</td>
+        </tr>
+        <tr>
+          <td>#5</td>
+          <td>Malik Beasley</td>
+          <td>SG</td>
+          <td>76</td>
+          <td>26.4</td>
+          <td>13.3</td>
+          <td>1.7</td>
+          <td>0.8</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>#2</td>
+          <td>Jarred Vanderbilt</td>
+          <td>SF</td>
+          <td>79</td>
+          <td>24</td>
+          <td>8.3</td>
+          <td>2.7</td>
+          <td>1</td>
+          <td>0.3</td>
+        </tr>
+        <tr>
+          <td>#3</td>
+          <td>Anthony Davis</td>
+          <td>C</td>
+          <td>89</td>
+          <td>36.2</td>
+          <td>26</td>
+          <td>2.5</td>
+          <td>1/2</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h4>Survey</h4>
+    <form>
+      <label for="faveStarter">
+        Who is your favorite in the first five of this team?
+      </label>
+      <br />
+      <select id="faveStarter">
+        <option value="">Click to select</option>
+        <option value="L. James">Lebron James</option>
+        <option value="D. Russell">D'Angelo Russell</option>
+        <option value="M. Beasley">Malik Beasley</option>
+        <option value="J. Vanderbilt">Jarred Vanderbilt</option>
+        <option value="A. Davis">Anthony Davis</option>
+      </select>
+      <br />
+      <br />
+      <label>
+        Do you think this team will be champion this year?:
+      </label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input
+        id="championYes"
+        type="radio" 
+        name="isChampionCandidate"
+        value="Yes"
+      />
+      <label for="championYes">
+        Yes
+      </label>
+      <input 
+        id="championNo"
+        type="radio"
+        name="isChampionCandidate"
+        value="No"
+      />
+      <label for="championNo">
+        No
+      </label>
+      <br />
+      <br />
+      <label for="essay">Any comments about this team?</label>
+      <br />
+      <textarea
+        id="essay"
+        placeholder="Feel free to write anything here"
+        rows="5"
+        cols="20"
+      ></textarea>
+    </form>
+  </body>
+</html>

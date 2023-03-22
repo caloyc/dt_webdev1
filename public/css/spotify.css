@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: stretch;
+}
+
+#sidenav {
+  height: 100%;
+  width:240px;
+  background-color: #000000;
+  padding: 12px;
+  flex: 0 0 240px;
+}
+
+#logo {
+  width: 140px;
+  height: 80px;
+  background-image: url("../img/logo.png");
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#links li {
+  margin: 6px 0;
+}
+
+#links li:nth-child(3) {
+  margin-bottom: 24px;
+}
+
+#links li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#links li a.active {
+  color: white;
+}
+
+#links li a:hover {
+  color: white;
+}
+
+.links-icon {
+  margin-right: 8px;
+}
+
+#content {
+  background-color: #1e1e1e;
+  color: white;
+
+}
+
+#topbar {
+  background-color: #101010;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#back-button {
+  color: #b3b3b3;
+  border-radius: 50%;
+  border-style: none;
+  background-color: black;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup-button {
+  background: transparent;
+  color: #b3b3b3;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 20px;
+}
+
+#signup-button:hover {
+  color: white;
+}
+
+#login-button {
+  background-color: #f6f6f6;
+  color: black;
+  padding-block: 8px;
+  padding-inline: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-weight: bold;
+  border-radius: 500px;
+  border-style: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+#login-button:hover {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#main-content {
+  background-color: #1e1e1e;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.header-title {
+  margin-bottom: 24px;
+}
+
+.header-title a {
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+
+.header-title a:hover {
+  text-decoration: underline;
+}
+
+.album-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  column-gap: 24px;
+  margin-bottom: 16px;
+}
+
+.album-card {
+  width: 180px;
+  height: 260px;
+  padding: 16px;
+  background-color: #181818;
+  border-radius: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.album-title {
+  font-weight: 700;
+  vertical-align: baseline;
+  text-overflow: ellipsis;
+  padding-bottom: 4px;
+}
+
+.album-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #a7a7a7;
+  margin-top: 4px;
+  max-height: 2rem;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.album-image {
+  margin-bottom: 12px;
+}
+
+
+#album01 {
+  background-image: url("../img/album_cover1.jpg");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+
+}
+
+#album02 {
+  background-image: url("../img/album_cover2.jpeg");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+#album03 {
+  background-image: url("../img/album_cover3.jpg");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+#album04 {
+  background-image: url("../img/album_cover4.jpg");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+#album05 {
+  background-image: url("../img/album_cover5.jpg");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+#album06 {
+  background-image: url("../img/album_cover6.jpg");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+
+}
+
+#album07 {
+  background-image: url("../img/album_cover7.png");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+#album08 {
+  background-image: url("../img/album_cover8.png");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+#album09 {
+  background-image: url("../img/album_cover9.png");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+#album10 {
+  background-image: url("../img/album_cover10.jpeg");
+  background-size: contain;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}

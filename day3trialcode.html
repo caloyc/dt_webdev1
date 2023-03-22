@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tables and Forms</title>
+  </head>
+  <body>
+    <nav>
+      <a href="day2webtestcode.html">Day 2 Code</a>
+      <a href="checker.html">Checker file</a>
+    </nav>
+    <form action="/login.js">
+      <label for="username">Username: </label>
+      <br />
+      <input 
+        id="username"
+        type="text" 
+        name="uName"
+        placeholder="Usernames cannot contain numbers"
+      />
+      <br />
+      <label for="password">Password: </label>
+      <br />
+      <input 
+        id="password"
+        type="password" 
+        name="passCode"
+        placeholder="Enter at least 8 characters"
+      />
+      <input 
+        type="submit"
+        value="Submit"
+      />
+      <input 
+        type="reset"
+        value="Reset"
+      />
+    </form>
+    <hr />
+    <form>
+      <select name="cars">
+        <option value="">Click to select</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+      <br />
+      <input 
+        type="submit"
+        value="Submit Select"
+      />
+    </form>
+    <hr />
+    <form>
+        <label for="agreeBox">
+          Check this:
+        </label>
+        <input
+        id="agreeBox" 
+        type="checkbox"
+        name="agree"
+      />
+      <br />
+      <label>
+        Select this:
+      </label>
+      <input
+        type="radio"
+        name="gender"
+        value="Male"
+      />
+      <input
+        type="radio"
+        name="gender"
+        value="Female"
+      />
+      <br />
+      <input
+        type="submit"
+        value="Submit me"
+      />
+    </form>
+    <hr />
+    <form>
+      <input 
+        type="number"
+        name="num"
+      />
+      <br />
+      <input 
+        type="email"
+        name="email"
+      />
+      <br />
+      <input 
+        type="date"
+        name="date"
+      />
+      <br />
+      <input
+        type="submit"
+        value="Submit form"
+      />
+    </form>
+    <hr />
+    <form>
+      <textarea
+        placeholder="Textareas can have placeholder too"
+        rows="5"
+        cols="20"
+      ></textarea>
+      <br />
+      <button>
+        You can assign Javascript actions here
+      </button>
+    </form>
+    <div class="NutriFacts">
+      <h3>Nutrition Facts</h3>
+      <table border="10">
+        <thead>
+          <tr>
+            <th colspan="3">Amount per serving</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sodium</td>
+            <td>25mg</td>
+            <td>40%</td>
+          </tr>
+          <tr>
+            <td>Total Fat</td>
+            <td>100mg</td>
+            <td>40%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+    <!-- START YOUR CODE FOR TABLE EXERCISE HERE -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="2">
+            Name
+          </th>
+          <th>Age</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Angela</td>
+          <td>Ordonez</td>
+          <td>2</td>
+          <td>Pasig City</td>
+        </tr>
+        <tr>
+          <td>Camille</td>
+          <td>Tenorio</td>
+          <td>1</td>
+          <td>Taguig</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>Caballero</td>
+          <td>2</td>
+          <td>Quezon City</td>
+        </tr>
+        <tr>
+          <td>Carlos</td>
+          <td>Pelimer</td>
+          <td>1</td>
+          <td>Pasig City</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- FORM CODE STARTS HERE -->
+    <hr />
+    <form>
+      <label>First Name</label> 
+      <br />
+      <input 
+        type="text" 
+        name="firstname" 
+      />
+      <br />
+      <label>Last Name:</label> 
+      <br />
+      <input 
+        type="text" 
+        name="lastname" 
+      />
+    </form>
+    <hr />
+  </body>
+</html>
